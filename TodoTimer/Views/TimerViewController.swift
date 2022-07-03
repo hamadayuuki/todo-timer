@@ -12,6 +12,8 @@ import RxSwift
 
 class TimerViewController: UIViewController {
     
+    let disposeBag = DisposeBag()
+    
     var todoLabel: TodoLabel!
     var hourLabel: TimerLabel!
     var minuteLabel: TimerLabel!
@@ -68,6 +70,14 @@ class TimerViewController: UIViewController {
             make.centerX.equalTo(view.bounds.width * 0.5)
             make.top.equalTo(timerHorizontalView.snp.bottom).offset(100)
         }
+    }
+    
+    func setupBinding() {
+        startButton.rx.tap
+            .subscribe { _ in
+                self.startButton.isSelected = !self.startButton.isSelected
+            }
+            .disposed(by: disposeBag)
     }
 
 
