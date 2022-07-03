@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        window?.rootViewController = ViewController()   // アプリ起動時に表示するViewを指定
+        window?.rootViewController = TimerViewController()   // アプリ起動時に表示するViewを指定
         return true
     }
 

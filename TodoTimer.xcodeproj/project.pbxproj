@@ -15,6 +15,12 @@
 		D469AA022871B6280049F1B8 /* TodoTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469AA012871B6280049F1B8 /* TodoTimerTests.swift */; };
 		D469AA0C2871B6280049F1B8 /* TodoTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469AA0B2871B6280049F1B8 /* TodoTimerUITests.swift */; };
 		D469AA0E2871B6280049F1B8 /* TodoTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469AA0D2871B6280049F1B8 /* TodoTimerUITestsLaunchTests.swift */; };
+		D469AA222871BB340049F1B8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D469AA212871BB340049F1B8 /* SnapKit */; };
+		D469AA252871BBA50049F1B8 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469AA242871BBA50049F1B8 /* TimerViewController.swift */; };
+		D469AA272871BBD20049F1B8 /* TimerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469AA262871BBD10049F1B8 /* TimerLabel.swift */; };
+		D469AA2A2871C11A0049F1B8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469AA292871C11A0049F1B8 /* UIColorExtension.swift */; };
+		D469AA2C2871CA0E0049F1B8 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469AA2B2871CA0E0049F1B8 /* TimerButton.swift */; };
+		D469AA2E2871CC510049F1B8 /* TodoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469AA2D2871CC510049F1B8 /* TodoLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,11 @@
 		D469AA072871B6280049F1B8 /* TodoTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D469AA0B2871B6280049F1B8 /* TodoTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTimerUITests.swift; sourceTree = "<group>"; };
 		D469AA0D2871B6280049F1B8 /* TodoTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D469AA242871BBA50049F1B8 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		D469AA262871BBD10049F1B8 /* TimerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerLabel.swift; sourceTree = "<group>"; };
+		D469AA292871C11A0049F1B8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		D469AA2B2871CA0E0049F1B8 /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
+		D469AA2D2871CC510049F1B8 /* TodoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D469AA222871BB340049F1B8 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +112,8 @@
 				D469A9EA2871B6220049F1B8 /* AppDelegate.swift */,
 				D469A9EC2871B6220049F1B8 /* SceneDelegate.swift */,
 				D469A9EE2871B6220049F1B8 /* ViewController.swift */,
+				D469AA282871C1030049F1B8 /* Extensions */,
+				D469AA232871BB8A0049F1B8 /* Views */,
 				D469A9F32871B6270049F1B8 /* Assets.xcassets */,
 				D469A9F52871B6270049F1B8 /* LaunchScreen.storyboard */,
 				D469A9F82871B6270049F1B8 /* Info.plist */,
@@ -124,6 +138,25 @@
 			path = TodoTimerUITests;
 			sourceTree = "<group>";
 		};
+		D469AA232871BB8A0049F1B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D469AA242871BBA50049F1B8 /* TimerViewController.swift */,
+				D469AA2D2871CC510049F1B8 /* TodoLabel.swift */,
+				D469AA262871BBD10049F1B8 /* TimerLabel.swift */,
+				D469AA2B2871CA0E0049F1B8 /* TimerButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D469AA282871C1030049F1B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D469AA292871C11A0049F1B8 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +173,9 @@
 			dependencies = (
 			);
 			name = TodoTimer;
+			packageProductDependencies = (
+				D469AA212871BB340049F1B8 /* SnapKit */,
+			);
 			productName = TodoTimer;
 			productReference = D469A9E72871B6220049F1B8 /* TodoTimer.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +248,9 @@
 				Base,
 			);
 			mainGroup = D469A9DE2871B6220049F1B8;
+			packageReferences = (
+				D469AA202871BB330049F1B8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D469A9E82871B6220049F1B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,9 +293,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D469AA2E2871CC510049F1B8 /* TodoLabel.swift in Sources */,
+				D469AA272871BBD20049F1B8 /* TimerLabel.swift in Sources */,
+				D469AA252871BBA50049F1B8 /* TimerViewController.swift in Sources */,
 				D469A9EF2871B6220049F1B8 /* ViewController.swift in Sources */,
 				D469A9EB2871B6220049F1B8 /* AppDelegate.swift in Sources */,
+				D469AA2C2871CA0E0049F1B8 /* TimerButton.swift in Sources */,
 				D469A9ED2871B6220049F1B8 /* SceneDelegate.swift in Sources */,
+				D469AA2A2871C11A0049F1B8 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +632,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D469AA202871BB330049F1B8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D469AA212871BB340049F1B8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D469AA202871BB330049F1B8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D469A9DF2871B6220049F1B8 /* Project object */;
 }
