@@ -21,6 +21,9 @@
 		D469AA2A2871C11A0049F1B8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469AA292871C11A0049F1B8 /* UIColorExtension.swift */; };
 		D469AA2C2871CA0E0049F1B8 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469AA2B2871CA0E0049F1B8 /* TimerButton.swift */; };
 		D469AA2E2871CC510049F1B8 /* TodoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469AA2D2871CC510049F1B8 /* TodoLabel.swift */; };
+		D469AA312871CE540049F1B8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D469AA302871CE540049F1B8 /* RxCocoa */; };
+		D469AA332871CE540049F1B8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D469AA322871CE540049F1B8 /* RxSwift */; };
+		D469AA352871CE540049F1B8 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = D469AA342871CE540049F1B8 /* RxTest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D469AA352871CE540049F1B8 /* RxTest in Frameworks */,
+				D469AA332871CE540049F1B8 /* RxSwift in Frameworks */,
+				D469AA312871CE540049F1B8 /* RxCocoa in Frameworks */,
 				D469AA222871BB340049F1B8 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +181,9 @@
 			name = TodoTimer;
 			packageProductDependencies = (
 				D469AA212871BB340049F1B8 /* SnapKit */,
+				D469AA302871CE540049F1B8 /* RxCocoa */,
+				D469AA322871CE540049F1B8 /* RxSwift */,
+				D469AA342871CE540049F1B8 /* RxTest */,
 			);
 			productName = TodoTimer;
 			productReference = D469A9E72871B6220049F1B8 /* TodoTimer.app */;
@@ -250,6 +259,7 @@
 			mainGroup = D469A9DE2871B6220049F1B8;
 			packageReferences = (
 				D469AA202871BB330049F1B8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D469AA2F2871CE540049F1B8 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = D469A9E82871B6220049F1B8 /* Products */;
 			projectDirPath = "";
@@ -642,6 +652,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		D469AA2F2871CE540049F1B8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -649,6 +667,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D469AA202871BB330049F1B8 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		D469AA302871CE540049F1B8 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D469AA2F2871CE540049F1B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D469AA322871CE540049F1B8 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D469AA2F2871CE540049F1B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		D469AA342871CE540049F1B8 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D469AA2F2871CE540049F1B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
