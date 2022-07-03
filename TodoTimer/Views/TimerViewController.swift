@@ -35,12 +35,12 @@ class TimerViewController: UIViewController {
         timerHorizontalView.axis = .horizontal
         timerHorizontalView.spacing = 10
         
-        hourLabel.text = "12"
-        minuteLabel.text = "34"
-        secondLabel.text = "56"
+        hourLabel.text   = "00"
+        minuteLabel.text = "00"
+        secondLabel.text = "00"
         
         // スタートボタン
-        let startButton = TimerButton(text: "スタート", textSize: 30, frameSize: CGSize(width: screenSize.width * 0.5, height: screenSize.height * 0.1), backgroundColor: textBackgroundColor)
+        let startButton = TimerButton(textSize: 30, frameSize: CGSize(width: screenSize.width * 0.5, height: screenSize.height * 0.1), backgroundColor: textBackgroundColor)
         
         view.addSubview(timerHorizontalView)
         timerHorizontalView.snp.makeConstraints { make -> Void in

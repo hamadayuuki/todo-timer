@@ -9,14 +9,15 @@ import UIKit
 import SnapKit
 
 class TimerButton: UIButton {
-    init(text: String, textSize: CGFloat, frameSize: CGSize, backgroundColor: UIColor) {
+    init(textSize: CGFloat, frameSize: CGSize, backgroundColor: UIColor) {
         super.init(frame: .zero)
         
         self.backgroundColor = backgroundColor
         self.layer.cornerRadius = 20
         self.layer.borderWidth = 5
         self.layer.borderColor = UIColor.white.cgColor
-        self.setTitle(text, for: .normal)
+        self.setTitle("スタート", for: .normal)
+        self.setTitle("ストップ", for: .selected)
         self.titleLabel?.font = UIFont(name: "DINAlternate-Bold", size: textSize)
         self.setTitleColor(.white, for: .normal)
         
